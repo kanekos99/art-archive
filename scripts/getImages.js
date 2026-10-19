@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const folderPath = "./img";
+const folderPath = "./img/small";
 const outputPath = "./scripts/images.js";
 const validExtensions = [".png", ".jpg", ".jpeg", ".webp"];
 
