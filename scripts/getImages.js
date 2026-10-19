@@ -12,7 +12,7 @@ fs.readdir(folderPath, { withFileTypes: true }, (err, files) => {
     const ext = path.extname(file.name).toLowerCase();
     if (validExtensions.includes(ext)) {
       imageFiles.push({
-        path: `./img/${file.name}`,
+        path: `./img/small/${file.name}`,
       });
     }
   });
