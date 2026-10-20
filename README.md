@@ -12,3 +12,7 @@ Make images WEBP:
 ```
 for %j in ("C:\Users\<your-path>\*.png") do ( ffmpeg -i "%j" -vf "scale=1000:1000:force_original_aspect_ratio=decrease" -c:v libwebp -lossless 1 "C:\Users\<your-path>\small\%~nj.webp" )
 ```
+Alternative (add FFMPEG to environment variables first):
+```
+for %j in (*.png *.jpg *.jpeg *.webp *.gif) do ( ffmpeg -i "%j" -vf "scale=1000:1000:force_original_aspect_ratio=decrease" "small\%~nj.png" )
+```
