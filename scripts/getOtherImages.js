@@ -3,7 +3,7 @@ const path = require("path");
 
 const folderPath = "./gift_comms/small";
 const outputPath = "./scripts/gift_comms.js";
-const validExtensions = [".png", ".jpg", ".jpeg", ".webp"];
+const validExtensions = [".png", ".jpg", ".jpeg", ".webp", ".gif"];
 
 fs.readdir(folderPath, { withFileTypes: true }, (err, files) => {
   const imageFiles = [];

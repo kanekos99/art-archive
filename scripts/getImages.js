@@ -3,7 +3,7 @@ const path = require("path");
 
 const folderPath = "./img/small";
 const outputPath = "./scripts/images.js";
-const validExtensions = [".png", ".jpg", ".jpeg", ".webp"];
+const validExtensions = [".png", ".jpg", ".jpeg", ".webp", ".gif"];
 
 fs.readdir(folderPath, { withFileTypes: true }, (err, files) => {
   const imageFiles = [];
